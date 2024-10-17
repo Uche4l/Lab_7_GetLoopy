@@ -3,7 +3,8 @@ import java.util.Scanner;
 
 public class Task8
 {
-    public static void main(String[] args) {
+    public static void main(String[] args)
+    {
         Random gen = new Random();
         Scanner input = new Scanner(System.in);
 
@@ -12,6 +13,7 @@ public class Task8
         int die3 = 0;
         int dieRoll = 0;
         int sum = 0;
+        int rollCount = 0;
         boolean continueYN = true;
 
         do {
@@ -29,11 +31,11 @@ public class Task8
 
             System.out.print("play again? [YN]: ");
             continueYN = input.hasNext();
-            if (!input.equals("Y"){
+            if (!input.equals("Y")){
                 continueYN = false;
             }
         } while (continueYN);
 
-    }
+   }
 
 }
